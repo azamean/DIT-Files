@@ -1,3 +1,5 @@
+Button btn = new Button(500, 500, 100, 50, 50);
+
 float[] x = new float[100];
 float[] y = new float[100];
 float[] speed = new float[100];

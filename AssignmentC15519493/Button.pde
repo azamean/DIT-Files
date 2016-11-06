@@ -34,5 +34,15 @@ class Button
     btnText = "Button";
     btnTextColor = color(0, 0, 0);
   }
+  
+    void drawButton()
+  {
+    stroke(btnBorderColor);
+    fill(btnColor);
+    rect(btnX, btnY, btnWidth, btnHeight, btnBorderRadius);
+    fill(btnTextColor);
+    text(btnText, btnCenterX, btnCenterY);
+    textAlign(CENTER, CENTER);
+  }
  
 }
