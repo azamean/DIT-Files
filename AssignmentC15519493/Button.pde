@@ -19,5 +19,20 @@ class Button
     btnText = "Button";
     btnTextColor = color(0, 0, 0);
   }
+  //Parameter constructor
+  Button(float btnX, float btnY, float btnWidth, float btnHeight, float btnBorderRadius)
+  {
+    this.btnX = btnX;
+    this.btnY = btnY;
+    this.btnWidth = btnWidth;
+    this.btnHeight = btnHeight;
+    this.btnBorderRadius = btnBorderRadius;
+    btnCenterX = btnX + btnWidth / 2;
+    btnCenterY = btnY + btnHeight / 2;
+    btnColor = color(255, 255, 255);
+    btnBorderColor = color(0, 0, 0);
+    btnText = "Button";
+    btnTextColor = color(0, 0, 0);
+  }
  
 }
