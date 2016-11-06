@@ -19,6 +19,7 @@ class Button
     btnText = "Button";
     btnTextColor = color(0, 0, 0);
   }
+  
   //Parameter constructor
   Button(float btnX, float btnY, float btnWidth, float btnHeight, float btnBorderRadius)
   {
