@@ -6,7 +6,7 @@ class Button
   private color btnColor, btnBorderColor, btnTextColor;
   private String btnText;
   
-   // constructor for button
+  // default constructor
   Button()
   {
     btnX = btnY = 0;
@@ -20,7 +20,7 @@ class Button
     btnTextColor = color(0, 0, 0);
   }
   
-  //Parameter constructor
+  // parameterised constructor
   Button(float btnX, float btnY, float btnWidth, float btnHeight, float btnBorderRadius)
   {
     this.btnX = btnX;
@@ -36,7 +36,8 @@ class Button
     btnTextColor = color(0, 0, 0);
   }
   
-    void drawButton()
+  // draws a button on the canvas
+  void drawButton()
   {
     stroke(btnBorderColor);
     fill(btnColor);
@@ -45,9 +46,18 @@ class Button
     text(btnText, btnCenterX, btnCenterY);
     textAlign(CENTER, CENTER);
   }
-    void setColor(int red, int green, int blue)
+  
+  // sets the background color for a button 
+  void setColor(int red, int green, int blue)
   {
     this.btnColor = color(red, green, blue);
   }
+  
+  // sets the border color for a button
+  void setBorderColor(int red, int green, int blue)
+  {
+    this.btnBorderColor = color(red, green, blue);
+  }
+  
  
 }
