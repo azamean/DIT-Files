@@ -7,6 +7,7 @@ void setup()
   
   size(800,800);
   background(0);
+  starfield.drawStars();
    
 
 }
@@ -16,7 +17,7 @@ void draw()
   background(0);
   //btn.drawButton();
   
-  starfield.drawStars();
+  starfield.drawPoints();
   
   
 }
