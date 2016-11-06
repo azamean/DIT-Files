@@ -44,5 +44,9 @@ class Button
     text(btnText, btnCenterX, btnCenterY);
     textAlign(CENTER, CENTER);
   }
+    void setColor(int red, int green, int blue)
+  {
+    this.btnColor = color(red, green, blue);
+  }
  
 }
